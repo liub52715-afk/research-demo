@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN" data-page="home">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>开始一个研究分析任务｜AI研究分析助手</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body data-page="home">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-copy">
+          <p class="brand-kicker">Web prototype</p>
+          <p class="brand-title">AI研究分析助手</p>
+          <p class="brand-subtitle">严格对应《步骤.md》中 5 个页面原型的网页实现。</p>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html"><span class="nav-index">00</span><span>总览</span></a>
+        <a class="nav-link active" href="home.html"><span class="nav-index">01</span><span>首页</span></a>
+        <a class="nav-link" href="decompose.html"><span class="nav-index">02</span><span>拆解</span></a>
+        <a class="nav-link" href="parse.html"><span class="nav-index">03</span><span>解析</span></a>
+        <a class="nav-link" href="synthesis.html"><span class="nav-index">04</span><span>归纳</span></a>
+        <a class="nav-link" href="output.html"><span class="nav-index">05</span><span>输出</span></a>
+      </nav>
+      <a class="site-cta" href="decompose.html">下一页</a>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">01｜Page Prototype</div>
+            <h1 class="hero-title">开始一个研究分析任务</h1>
+            <p class="hero-lede">让用户快速输入问题、选择任务类型、上传资料。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-arrow" href="#prototype">开始分析</a>
+              <a class="btn btn-secondary" href="#detailGrid">使用模板</a>
+              <a class="btn btn-ghost" href="#prototype">上传资料</a>
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card"><strong>5</strong><span>任务场景</span><span>文献综述、政策分析、ESG/行业研究、数据结果解释、报告生成</span></div>
+            <div class="metric-card"><strong>3</strong><span>上传入口</span><span>上传 PDF、上传 Word、导入网页链接</span></div>
+            <div class="metric-card"><strong>4</strong><span>推荐模板</span><span>文献综述、政策解读、回归结果解释、企业策略建议</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="demo-frame" id="prototype">
+            <div class="demo-head">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="demo-tag">Page 01</div>
+            </div>
+            <div class="demo-body">
+              <div class="proto-app">
+                <div class="proto-topbar">
+                  <div>
+                    <strong>首页 / 问题输入页</strong>
+                    <span>开始一个研究分析任务</span>
+                  </div>
+                  <div class="proto-topbar-meta">
+                    <span class="proto-badge">step 01</span>
+                    <span class="proto-badge proto-badge-ghost">任务启动</span>
+                  </div>
+                </div>
+
+                <div class="proto-workspace proto-workspace-home">
+                  <section class="proto-card proto-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">左侧：任务输入区</span>
+                      <h3>先把问题说清楚</h3>
+                    </div>
+
+                    <div class="proto-field">
+                      <span class="proto-label">请输入你的研究/分析问题</span>
+                      <div class="proto-textarea">例如：欧盟碳关税将如何影响中国制造业出口？</div>
+                    </div>
+
+                    <div class="proto-field">
+                      <span class="proto-label">场景选择</span>
+                      <div class="proto-choice-grid">
+                        <span class="proto-pill teal">文献综述</span>
+                        <span class="proto-pill coral">政策分析</span>
+                        <span class="proto-pill gold">ESG/行业研究</span>
+                        <span class="proto-pill slate">数据结果解释</span>
+                        <span class="proto-pill neutral">报告生成</span>
+                      </div>
+                    </div>
+
+                    <div class="proto-field">
+                      <span class="proto-label">上传资料</span>
+                      <div class="proto-upload-grid">
+                        <div class="proto-upload-card">
+                          <strong>上传 PDF</strong>
+                          <span>支持论文、政策、行业报告</span>
+                        </div>
+                        <div class="proto-upload-card">
+                          <strong>上传 Word</strong>
+                          <span>支持研究草稿、会议纪要、汇报底稿</span>
+                        </div>
+                        <div class="proto-upload-card">
+                          <strong>导入网页链接</strong>
+                          <span>支持法规原文、新闻稿、公开数据页</span>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <aside class="proto-card proto-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">右侧：推荐模板区</span>
+                      <h3>常用模板</h3>
+                    </div>
+
+                    <div class="proto-stack">
+                      <div class="proto-template-card">
+                        <span class="proto-tag teal">模板</span>
+                        <strong>文献综述模板</strong>
+                        <span>按研究问题、关键词、文献差异和综述结构组织输入。</span>
+                      </div>
+                      <div class="proto-template-card">
+                        <span class="proto-tag coral">模板</span>
+                        <strong>政策解读模板</strong>
+                        <span>先拆条款，再梳理影响路径、适用行业和建议输出。</span>
+                      </div>
+                      <div class="proto-template-card">
+                        <span class="proto-tag gold">模板</span>
+                        <strong>回归结果解释模板</strong>
+                        <span>围绕系数方向、显著性、稳健性和机制进行表达。</span>
+                      </div>
+                      <div class="proto-template-card">
+                        <span class="proto-tag slate">模板</span>
+                        <strong>企业策略建议模板</strong>
+                        <span>沉淀风险点、应对动作、优先级和执行建议。</span>
+                      </div>
+                    </div>
+
+                    <div class="proto-note">
+                      <strong>模板说明</strong>
+                      <span>模板会自动补齐研究范围、分析步骤和输出结构，帮助用户尽快开始。</span>
+                    </div>
+                  </aside>
+                </div>
+
+                <div class="proto-action-row">
+                  <button class="proto-action primary" type="button">开始分析</button>
+                  <button class="proto-action secondary" type="button">使用模板</button>
+                  <button class="proto-action ghost" type="button">上传资料</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="chapter-strip">
+        <a class="chapter-card active" href="home.html"><small>01</small><strong>首页 / 问题输入页</strong><span>输入任务、选择场景、上传资料</span></a>
+        <a class="chapter-card" href="decompose.html"><small>02</small><strong>任务拆解页</strong><span>把复杂问题拆成连续子任务</span></a>
+        <a class="chapter-card" href="parse.html"><small>03</small><strong>文档解析页</strong><span>提取摘要、观点、标签与引用位置</span></a>
+        <a class="chapter-card" href="synthesis.html"><small>04</small><strong>分析归纳页</strong><span>完成跨文档对比与逻辑整理</span></a>
+        <a class="chapter-card" href="output.html"><small>05</small><strong>结果输出页</strong><span>生成综述、报告与策略建议</span></a>
+      </section>
+
+      <section class="section-head" id="chapters">
+        <div>
+          <h2>按原文件拆成：页面目标 / 页面布局 / 页面按钮</h2>
+          <p>这一页的重点不是介绍产品能力，而是把用户顺利拉进工作流。右侧原型保留了左侧任务输入、右侧推荐模板的结构。</p>
+        </div>
+      </section>
+
+      <section class="detail-grid" id="detailGrid">
+        <article class="detail-card">
+          <div class="eyebrow">页面目标</div>
+          <h3>让用户快速输入问题、选择任务类型、上传资料。</h3>
+          <p>首页负责降低起步门槛，让用户在第一屏就完成最关键的启动动作。</p>
+          <ul class="detail-list">
+            <li>输入研究 / 分析问题</li>
+            <li>选择任务类型</li>
+            <li>补齐初始资料</li>
+          </ul>
+          <div class="detail-meta"><span class="tag teal">页面目标</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面布局</div>
+          <h3>左侧任务输入区，右侧推荐模板区。</h3>
+          <p>信息结构直接按原文件实现，没有额外改名或换层级。</p>
+          <ul class="detail-list">
+            <li>输入框：请输入你的研究/分析问题</li>
+            <li>场景选择：文献综述、政策分析、ESG/行业研究、数据结果解释、报告生成</li>
+            <li>推荐模板：文献综述模板、政策解读模板、回归结果解释模板、企业策略建议模板</li>
+          </ul>
+          <div class="detail-meta"><span class="tag coral">页面布局</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面按钮</div>
+          <h3>主按钮名称严格对齐原文件。</h3>
+          <p>按钮文案直接用于后续 Figma、Axure、PPT 原型。</p>
+          <ul class="detail-list">
+            <li>开始分析</li>
+            <li>使用模板</li>
+            <li>上传资料</li>
+          </ul>
+          <div class="detail-meta"><span class="tag gold">页面按钮</span></div>
+        </article>
+      </section>
+
+      <section class="footer-panel">
+        <div>
+          <h3>首页负责把任务拉进系统，而不是先解释复杂能力。</h3>
+          <p>当用户完成问题输入、场景选择和资料上传，后面的任务拆解页就有了清晰起点。</p>
+        </div>
+        <div class="footer-actions">
+          <a class="btn btn-primary btn-arrow" href="decompose.html">去任务拆解</a>
+          <a class="btn btn-secondary" href="index.html">回到总览</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/demo.js"></script>
+</body>
+</html>
