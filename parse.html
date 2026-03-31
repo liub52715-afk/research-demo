@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="zh-CN" data-page="parse">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>文档解析与信息提取｜AI研究分析助手</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body data-page="parse">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-copy">
+          <p class="brand-kicker">Web prototype</p>
+          <p class="brand-title">AI研究分析助手</p>
+          <p class="brand-subtitle">严格对应《步骤.md》中 5 个页面原型的网页实现。</p>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html"><span class="nav-index">00</span><span>总览</span></a>
+        <a class="nav-link" href="home.html"><span class="nav-index">01</span><span>首页</span></a>
+        <a class="nav-link" href="decompose.html"><span class="nav-index">02</span><span>拆解</span></a>
+        <a class="nav-link active" href="parse.html"><span class="nav-index">03</span><span>解析</span></a>
+        <a class="nav-link" href="synthesis.html"><span class="nav-index">04</span><span>归纳</span></a>
+        <a class="nav-link" href="output.html"><span class="nav-index">05</span><span>输出</span></a>
+      </nav>
+      <a class="site-cta" href="synthesis.html">下一页</a>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">03｜Page Prototype</div>
+            <h1 class="hero-title">文档解析与信息提取</h1>
+            <p class="hero-lede">帮助用户快速读懂长文档。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-arrow" href="#prototype">生成摘要</a>
+              <a class="btn btn-secondary" href="#detailGrid">提取关键观点</a>
+              <a class="btn btn-ghost" href="#prototype">加入知识库</a>
+              <a class="btn btn-ghost" href="synthesis.html">对比其他文档</a>
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card"><strong>2</strong><span>摘要长度</span><span>100 字摘要、300 字摘要</span></div>
+            <div class="metric-card"><strong>4</strong><span>关键信息块</span><span>观点、变量、方法 / 条款、时间节点</span></div>
+            <div class="metric-card"><strong>2</strong><span>引用示例</span><span>页码、段落、图表定位</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="demo-frame" id="prototype">
+            <div class="demo-head">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="demo-tag">Page 03</div>
+            </div>
+            <div class="demo-body">
+              <div class="proto-app">
+                <div class="proto-topbar">
+                  <div>
+                    <strong>文档解析页</strong>
+                    <span>文档解析与信息提取</span>
+                  </div>
+                  <div class="proto-topbar-meta">
+                    <span class="proto-badge">step 03</span>
+                    <span class="proto-badge proto-badge-ghost">单文档处理</span>
+                  </div>
+                </div>
+
+                <div class="proto-workspace proto-workspace-parse">
+                  <section class="proto-card proto-panel proto-document-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">左侧：文档阅读区</span>
+                      <h3>欧盟碳边境调节机制（CBAM）政策原文</h3>
+                    </div>
+
+                    <div class="proto-document">
+                      <div class="proto-document-toolbar">
+                        <span class="proto-tag teal">PDF 文档预览</span>
+                        <span class="proto-tag neutral">支持高亮</span>
+                        <span class="proto-tag gold">支持选中文字提问</span>
+                      </div>
+                      <div class="proto-document-body">
+                        <p>Selected page / highlighted paragraph / selected quote</p>
+                        <div class="proto-highlight-line"></div>
+                        <div class="proto-highlight-line short"></div>
+                        <div class="proto-document-quote">“企业需要在过渡期先建立排放数据核算和申报能力。”</div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <aside class="proto-card proto-panel proto-result-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">右侧：解析结果区</span>
+                      <h3>摘要、关键信息与引用位置</h3>
+                    </div>
+
+                    <div class="proto-module">
+                      <span class="proto-label">模块1：摘要</span>
+                      <div class="proto-summary-card">
+                        <strong>100字摘要</strong>
+                        <p>CBAM 将通过碳成本补缴、申报核算和供应链透明度要求，抬升高碳制造业出口的合规成本。</p>
+                      </div>
+                      <div class="proto-summary-card">
+                        <strong>300字摘要</strong>
+                        <p>文件显示，CBAM 在过渡期先要求企业完成排放申报与数据披露，正式征收阶段再逐步引入补缴机制。对中国制造业而言，影响集中在钢铁、水泥、铝、化肥等高碳行业，企业既面临直接成本上升，也面临核算体系、客户披露和供应链协同的合规压力。</p>
+                      </div>
+                    </div>
+
+                    <div class="proto-module">
+                      <span class="proto-label">模块2：关键信息</span>
+                      <div class="proto-list">
+                        <div class="proto-list-item"><strong>核心观点：碳成本和信息披露要求会同步抬升出口门槛</strong></div>
+                        <div class="proto-list-item"><strong>关键变量 / 指标：隐含碳排放、申报频率、产品类别、成本转嫁能力</strong></div>
+                        <div class="proto-list-item"><strong>研究方法 / 政策条款：过渡期申报、正式补缴、核算规则</strong></div>
+                        <div class="proto-list-item"><strong>时间节点：过渡期、正式执行期、行业范围扩展期</strong></div>
+                      </div>
+                    </div>
+
+                    <div class="proto-module">
+                      <span class="proto-label">模块3：引用位置</span>
+                      <div class="proto-inline-tags">
+                        <span class="proto-tag teal">第 3 页第 2 段</span>
+                        <span class="proto-tag gold">第 5 页图表 1</span>
+                      </div>
+                    </div>
+                  </aside>
+                </div>
+
+                <div class="proto-action-row">
+                  <button class="proto-action primary" type="button">生成摘要</button>
+                  <button class="proto-action secondary" type="button">提取关键观点</button>
+                  <button class="proto-action ghost" type="button">加入知识库</button>
+                  <button class="proto-action ghost" type="button">对比其他文档</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="chapter-strip">
+        <a class="chapter-card" href="home.html"><small>01</small><strong>首页 / 问题输入页</strong><span>输入任务、选择场景、上传资料</span></a>
+        <a class="chapter-card" href="decompose.html"><small>02</small><strong>任务拆解页</strong><span>把复杂问题拆成连续子任务</span></a>
+        <a class="chapter-card active" href="parse.html"><small>03</small><strong>文档解析页</strong><span>提取摘要、观点、标签与引用位置</span></a>
+        <a class="chapter-card" href="synthesis.html"><small>04</small><strong>分析归纳页</strong><span>完成跨文档对比与逻辑整理</span></a>
+        <a class="chapter-card" href="output.html"><small>05</small><strong>结果输出页</strong><span>生成综述、报告与策略建议</span></a>
+      </section>
+
+      <section class="section-head">
+        <div>
+          <h2>按原文件实现的文档解析页</h2>
+          <p>左侧保留文档阅读区，右侧保留解析结果区，并把摘要、关键信息和引用位置拆成独立模块。</p>
+        </div>
+      </section>
+
+      <section class="detail-grid" id="detailGrid">
+        <article class="detail-card">
+          <div class="eyebrow">页面目标</div>
+          <h3>帮助用户快速读懂长文档。</h3>
+          <p>解析页不是只给一个总结，而是把文档内容转成可继续分析的结构化信息。</p>
+          <ul class="detail-list">
+            <li>快速浏览文档内容</li>
+            <li>抽出摘要与关键观点</li>
+            <li>保留可追溯引用位置</li>
+          </ul>
+          <div class="detail-meta"><span class="tag teal">页面目标</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面布局</div>
+          <h3>左侧文档阅读区，右侧解析结果区。</h3>
+          <p>页面布局完全照着原文件的左右结构来实现。</p>
+          <ul class="detail-list">
+            <li>左侧：PDF 文档预览、支持高亮、支持选中文字提问</li>
+            <li>右侧模块 1：100 字摘要、300 字摘要</li>
+            <li>右侧模块 2-3：关键信息、引用位置</li>
+          </ul>
+          <div class="detail-meta"><span class="tag coral">页面布局</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面按钮</div>
+          <h3>操作按钮对应原文件的 4 个动作。</h3>
+          <p>覆盖摘要生成、观点提取、知识沉淀和跨文档对比。</p>
+          <ul class="detail-list">
+            <li>生成摘要</li>
+            <li>提取关键观点</li>
+            <li>加入知识库</li>
+            <li>对比其他文档</li>
+          </ul>
+          <div class="detail-meta"><span class="tag gold">页面按钮</span></div>
+        </article>
+      </section>
+
+      <section class="footer-panel">
+        <div>
+          <h3>解析页负责把单篇材料“清洗干净”，为后续归纳做准备。</h3>
+          <p>只有把摘要、观点、变量和引用位置提取出来，跨文档对比才真正有基础。</p>
+        </div>
+        <div class="footer-actions">
+          <a class="btn btn-primary btn-arrow" href="synthesis.html">去分析归纳</a>
+          <a class="btn btn-secondary" href="decompose.html">回到任务拆解</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/demo.js"></script>
+</body>
+</html>
