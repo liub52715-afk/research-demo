@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN" data-page="decompose">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>任务拆解与分析路径｜AI研究分析助手</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body data-page="decompose">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-copy">
+          <p class="brand-kicker">Web prototype</p>
+          <p class="brand-title">AI研究分析助手</p>
+          <p class="brand-subtitle">严格对应《步骤.md》中 5 个页面原型的网页实现。</p>
+        </div>
+      </a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html"><span class="nav-index">00</span><span>总览</span></a>
+        <a class="nav-link" href="home.html"><span class="nav-index">01</span><span>首页</span></a>
+        <a class="nav-link active" href="decompose.html"><span class="nav-index">02</span><span>拆解</span></a>
+        <a class="nav-link" href="parse.html"><span class="nav-index">03</span><span>解析</span></a>
+        <a class="nav-link" href="synthesis.html"><span class="nav-index">04</span><span>归纳</span></a>
+        <a class="nav-link" href="output.html"><span class="nav-index">05</span><span>输出</span></a>
+      </nav>
+      <a class="site-cta" href="parse.html">下一页</a>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <div class="hero-copy">
+          <div>
+            <div class="eyebrow">02｜Page Prototype</div>
+            <h1 class="hero-title">任务拆解与分析路径</h1>
+            <p class="hero-lede">把大问题拆成小问题，并展示建议流程。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-arrow" href="#prototype">继续检索资料</a>
+              <a class="btn btn-secondary" href="#detailGrid">编辑拆解结果</a>
+              <a class="btn btn-ghost" href="#prototype">保存任务链路</a>
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-card"><strong>5</strong><span>子任务</span><span>从政策识别到策略建议共 5 步</span></div>
+            <div class="metric-card"><strong>4</strong><span>资料来源</span><span>欧盟政策、学术论文、行业报告、出口统计数据</span></div>
+            <div class="metric-card"><strong>1</strong><span>分析路径</span><span>把大问题变成可执行工作流</span></div>
+          </div>
+        </div>
+
+        <aside class="hero-panel">
+          <div class="demo-frame" id="prototype">
+            <div class="demo-head">
+              <div class="window-dots"><span></span><span></span><span></span></div>
+              <div class="demo-tag">Page 02</div>
+            </div>
+            <div class="demo-body">
+              <div class="proto-app">
+                <div class="proto-topbar">
+                  <div>
+                    <strong>任务拆解页</strong>
+                    <span>任务拆解与分析路径</span>
+                  </div>
+                  <div class="proto-topbar-meta">
+                    <span class="proto-badge">step 02</span>
+                    <span class="proto-badge proto-badge-ghost">分析路径</span>
+                  </div>
+                </div>
+
+                <div class="proto-banner">
+                  <span class="proto-label">顶部：原始问题</span>
+                  <h3>欧盟碳关税将如何影响中国制造业出口？</h3>
+                </div>
+
+                <div class="proto-workspace proto-workspace-decompose">
+                  <section class="proto-card proto-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">中间：拆解结果卡片</span>
+                      <h3>把问题拆成连续子任务</h3>
+                    </div>
+
+                    <div class="proto-task-list">
+                      <div class="proto-task-card">
+                        <div class="proto-task-index">1</div>
+                        <div><strong>子任务1</strong><span>识别政策关键条款与执行时间</span></div>
+                      </div>
+                      <div class="proto-task-card">
+                        <div class="proto-task-index">2</div>
+                        <div><strong>子任务2</strong><span>识别受影响行业与企业类型</span></div>
+                      </div>
+                      <div class="proto-task-card">
+                        <div class="proto-task-index">3</div>
+                        <div><strong>子任务3</strong><span>分析影响路径（成本 / 合规 / 竞争力）</span></div>
+                      </div>
+                      <div class="proto-task-card">
+                        <div class="proto-task-index">4</div>
+                        <div><strong>子任务4</strong><span>收集已有研究与案例</span></div>
+                      </div>
+                      <div class="proto-task-card">
+                        <div class="proto-task-index">5</div>
+                        <div><strong>子任务5</strong><span>形成应对策略建议</span></div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <aside class="proto-card proto-panel">
+                    <div class="proto-section-head">
+                      <span class="proto-kicker">右侧：推荐资料来源</span>
+                      <h3>建议优先补齐这些资料</h3>
+                    </div>
+
+                    <div class="proto-source-list">
+                      <div class="proto-source-item">
+                        <span class="proto-tag teal">来源 1</span>
+                        <strong>欧盟官方政策文件</strong>
+                        <span>用于确认条款范围、执行时点和申报要求。</span>
+                      </div>
+                      <div class="proto-source-item">
+                        <span class="proto-tag coral">来源 2</span>
+                        <strong>相关研究论文</strong>
+                        <span>用于识别机制路径、变量选择和既有研究争议。</span>
+                      </div>
+                      <div class="proto-source-item">
+                        <span class="proto-tag gold">来源 3</span>
+                        <strong>行业报告</strong>
+                        <span>用于补充行业受影响程度、案例和市场判断。</span>
+                      </div>
+                      <div class="proto-source-item">
+                        <span class="proto-tag slate">来源 4</span>
+                        <strong>出口统计数据</strong>
+                        <span>用于支撑不同产品、行业和地区的量化比较。</span>
+                      </div>
+                    </div>
+
+                    <div class="proto-note">
+                      <strong>建议流程</strong>
+                      <span>先确认政策条款，再识别受影响行业与企业，最后回到影响路径和策略建议。</span>
+                    </div>
+                  </aside>
+                </div>
+
+                <div class="proto-action-row">
+                  <button class="proto-action primary" type="button">继续检索资料</button>
+                  <button class="proto-action secondary" type="button">编辑拆解结果</button>
+                  <button class="proto-action ghost" type="button">保存任务链路</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="chapter-strip">
+        <a class="chapter-card" href="home.html"><small>01</small><strong>首页 / 问题输入页</strong><span>输入任务、选择场景、上传资料</span></a>
+        <a class="chapter-card active" href="decompose.html"><small>02</small><strong>任务拆解页</strong><span>把复杂问题拆成连续子任务</span></a>
+        <a class="chapter-card" href="parse.html"><small>03</small><strong>文档解析页</strong><span>提取摘要、观点、标签与引用位置</span></a>
+        <a class="chapter-card" href="synthesis.html"><small>04</small><strong>分析归纳页</strong><span>完成跨文档对比与逻辑整理</span></a>
+        <a class="chapter-card" href="output.html"><small>05</small><strong>结果输出页</strong><span>生成综述、报告与策略建议</span></a>
+      </section>
+
+      <section class="section-head">
+        <div>
+          <h2>按原文件落下的任务拆解页</h2>
+          <p>顶部展示原始问题，中间展示拆解结果卡片，右侧给推荐资料来源，底部保留原文件要求的 3 个操作按钮。</p>
+        </div>
+      </section>
+
+      <section class="detail-grid" id="detailGrid">
+        <article class="detail-card">
+          <div class="eyebrow">页面目标</div>
+          <h3>把大问题拆成小问题，并展示建议流程。</h3>
+          <p>拆解页承接首页输入，把模糊任务转换成一条清楚的分析路径。</p>
+          <ul class="detail-list">
+            <li>明确用户要回答的核心问题</li>
+            <li>拆成连续子任务</li>
+            <li>提示接下来该补哪些资料</li>
+          </ul>
+          <div class="detail-meta"><span class="tag teal">页面目标</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面布局</div>
+          <h3>顶部原始问题，中间拆解结果卡片，右侧推荐资料来源。</h3>
+          <p>布局结构和原文件一致，只把内容做得更可视化、更像真实产品界面。</p>
+          <ul class="detail-list">
+            <li>原始问题：欧盟碳关税将如何影响中国制造业出口？</li>
+            <li>子任务 1-5：政策条款、受影响行业、影响路径、案例研究、策略建议</li>
+            <li>推荐资料来源：欧盟官方政策文件、相关研究论文、行业报告、出口统计数据</li>
+          </ul>
+          <div class="detail-meta"><span class="tag coral">页面布局</span></div>
+        </article>
+
+        <article class="detail-card">
+          <div class="eyebrow">页面按钮</div>
+          <h3>主按钮按文件原文实现。</h3>
+          <p>按钮名称保留了分析流推进、结果修订和任务留存三类动作。</p>
+          <ul class="detail-list">
+            <li>继续检索资料</li>
+            <li>编辑拆解结果</li>
+            <li>保存任务链路</li>
+          </ul>
+          <div class="detail-meta"><span class="tag gold">页面按钮</span></div>
+        </article>
+      </section>
+
+      <section class="footer-panel">
+        <div>
+          <h3>拆解页是工作流的骨架，不是结果页。</h3>
+          <p>只要这里拆得准，后面的文档解析和分析归纳就会自然得多。</p>
+        </div>
+        <div class="footer-actions">
+          <a class="btn btn-primary btn-arrow" href="parse.html">去文档解析</a>
+          <a class="btn btn-secondary" href="home.html">回到首页</a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./assets/demo.js"></script>
+</body>
+</html>
